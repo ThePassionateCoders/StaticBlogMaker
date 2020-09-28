@@ -1642,6 +1642,4 @@ with open(f"{userInputs['sitename']}/contact.html", "w") as f:
 with open(f"{userInputs['sitename']}/wellidate.js", "w") as f:
 	f.write(validate)
 
-#Starting website on localhost
-os.chdir(f"{userInputs['sitename']}")
-os.system("python3 -m http.server")
+print("Your Blog is successfully created!")
