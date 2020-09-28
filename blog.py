@@ -79,7 +79,7 @@ while not os.path.exists(userInputs["favicon"]) or userInputs["favicon"].split("
 	
 #Copying favicon to blog's image directory
 os.mkdir(f"{userInputs['sitename']}/img")
-shutil.copy(favicon_path, f"{userInputs['sitename']}/img")
+shutil.copy(userInputs["favicon"], f"{userInputs['sitename']}/img")
 
 #Telling the user that some files will be downloaded
 print("\nNow let's download bootstrap files for your blog.\nNOTE:Check Your Network Connection\n")
