@@ -296,6 +296,6 @@ print("Post successfully created!")
 print(f"This is your code for post preview Pste it in index.html where other post previews are there.:\n\n{postpreview}")
 
 #running website
-os.chdir(f"{sitename}/{posturl}")
+os.chdir(f"{sitename}")
 os.system("python -m http.server")
 																																																																																																																																																																																																																																																																								
