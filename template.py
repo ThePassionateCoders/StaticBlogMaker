@@ -216,7 +216,7 @@ post=f"""
           	
           	{postbody}
 
-          <h4>Written By,<br>{creator}<br>{creatordesignaion}</h4>
+          <h4>Written By,<br>{creator}<br>{creatordesignation}</h4>
           {credits}
           <p>Photographs taken from <a href="https://unsplash.com/">Unsplash</a></p>
         </div>
@@ -293,11 +293,9 @@ with open(f"{sitename}/{posturl}", "w") as f:
 	
 	
 print("Post successfully created!")															
-print("This is your code for post preview Pste it in index.html where other post previews are there.:\n\n{postpreview}")
+print(f"This is your code for post preview Pste it in index.html where other post previews are there.:\n\n{postpreview}")
 
 #running website
-os.chdir(f"{sitename}")
+os.chdir(f"{sitename}/{posturl}")
 os.system("python -m http.server")
-
-
 																																																																																																																																																																																																																																																																								
