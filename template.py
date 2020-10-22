@@ -287,7 +287,7 @@ post=f"""
 
 #Creating Post page
 with open(f"{sitename}/{posturl}", "w") as f:
-	f.write(postbody)
+	f.write(post)
 	
 #with open(f"{sitename}/index.html", "a") as f:
 	
